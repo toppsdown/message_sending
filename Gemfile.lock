@@ -1,18 +1,9 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    ffi (1.9.10)
-    listen (3.0.3)
-      rb-fsevent (>= 0.9.3)
-      rb-inotify (>= 0.9)
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
-    rb-fsevent (0.9.6)
-    rb-inotify (0.9.5)
-      ffi (>= 0.5.0)
-    rerun (0.11.0)
-      listen (~> 3.0)
     sinatra (1.4.6)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -23,7 +14,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  rerun
   sinatra
 
 BUNDLED WITH
