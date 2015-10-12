@@ -19,4 +19,7 @@ get '/' do
   response_message << "File Contents: #{contents}"
 
   response_message.join('<br/>')
+
+  @message = params[:message]
+  erb :index
 end
