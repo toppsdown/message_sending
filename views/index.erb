@@ -3,6 +3,8 @@
   <title>Message Responder</title>
 </head>
 <body>
+  <%= erb :_debug if @debug_message %>
+
   <% if @response_message %>
     <% @response_message.each do |line| %>
       <%= line %><br />

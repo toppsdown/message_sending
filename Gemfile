@@ -5,3 +5,7 @@ source "https://rubygems.org"
 
 # This is how you require a library using bundler
 gem 'sinatra'
+
+group :development do
+  gem 'pry'
+end
