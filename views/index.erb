@@ -3,12 +3,21 @@
   <title>Message Responder</title>
 </head>
 <body>
-  <% @response_message.each do |line| %>
-    <%= line %><br />
+  <% if @response_message %>
+    <% @response_message.each do |line| %>
+      <%= line %><br />
+    <% end %>
   <% end %>
 
+  <p>Enter a message to save it to the cloud:</p>
+
+  <form action='./' method='post'>
+    <input type='text' name='message'>
+    <input type='submit' value='Submit'>
+  </form>
+
   <br />
-  File Contents:
+  File Contents:<br />
   <% @contents.each do |line| %>
     <%= line %><br />
   <% end %>

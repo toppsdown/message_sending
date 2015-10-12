@@ -10,10 +10,14 @@ class FileWriter
   end
 
   def read
-    file_object = File.new(@path, 'r')
-    contents = file_object.readlines
-    file_object.close
+    if File.exist?(@path)
+      file_object = File.new(@path, 'r')
+      contents = file_object.readlines
+      file_object.close
 
-    contents
+      contents
+    else
+      []
+    end
   end
 end
